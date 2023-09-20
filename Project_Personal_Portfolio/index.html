@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5716b597ef.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Java FullStack Web Developer</p>
+                <h1>Hi, I'm <span>Shubham </span><br> Ovhal From Pune,India</h1>
+            </div>
+        </div>
+    </div>
+    <!---------about---------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/user.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a dedicated and enthusiastic fresher with a strong desire to begin my journey as a Java Full-stack 
+                        Web Developer. I'm excited to join a dynamic team where I can use what I know about both front-end 
+                        and back-end technologies to create effective and efficient digital solutions. I believe in always learning, 
+                        adapting, and giving my best to grow both personally and professionally.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                            <p class="tab-links" onclick="opentab('projects')">Projects</p>
+                            <p class="tab-links" onclick="opentab('publications')">Publications</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Languages</span><br>Java, Advance java ,C++ , SQL , HTML, CSS ,JavaScript.</li>
+                                <li><span>Database </span><br>MySQL</li>
+                                <li><span>Frameworks</span><br>Springboot , Hibernate .</li>
+                                <li><span>Other</span><br>JDBC(Java Data-Base Connectivity) , J2EE(Java Enterprise Edition).</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>Bachelor Of Computer Engineering  (2020-2024)</span><br>Bharati Vidyapeeth's College Of Engineering lavale ,Pune.<br>Pass with 8.79 cgpa</li>
+                                <li><span>Higher secondary education (HSC)  (2019-2020)</span><br>Vidyadham Junior College Of Science , Shirur.<br>Pass with 79.54%</li>
+                                <li><span>Secondary Education (SSC)         (2017-2018)</span><br>Amrutrao Pandurang Banadal Madhyamic Vidyalay Sangavi-Yewali.<br>Pass with 92%</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="projects">
+                            <ul>
+                                <li><span>Languages</span><br>Java, Advance java ,C++ , SQL , HTML, CSS ,JavaScript.</li>
+                                <li><span>Database </span><br>MySQL</li>
+                                <li><span>Frameworks</span><br>Springboot , Hibernate .</li>
+                                <li><span>Other</span><br>JDBC(Java Data-Base Connectivity) , J2EE(Java Enterprise Edition).</li>
+                            </ul>
+                        </div><div class="tab-contents" id="publications">
+                            <ul>
+                                <li><span>Smart materials – A state-of-the-art-review</span><br>Journal Name: MaterialsToday: Proceeding ISSN : 2214-7853 <br><a href="https://doi.org/10.1016/j.matpr.2023.03.226" style="color: #ababab;">Paper </a> </li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!---------services---------------------->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Designer</h2>
+                    <p> I am a good web designer</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Designer</h2>
+                    <p> I am a good UI/UX Designer</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Developer</h2>
+                    <p> I am a good App Developer</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-------------portfolio-------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/work-1.png" >
+                    <div class="layer">
+                        <h3>Social Media app</h3>
+                        <p>Add here you project info......and below in the a tag add its link or icon </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/work-2.png" >
+                    <div class="layer">
+                        <h3>Music app</h3>
+                        <p>Add here you project info......and below in the a tag add its link or icon </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/work-3.png" >
+                    <div class="layer">
+                        <h3>online shopping app</h3>
+                        <p>Add here you project info......and below in the a tag add its link or icon </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+
+        </div>
+    </div>
+
+<!--------------------contact----------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-square-envelope"></i>1shubhamovhal@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+91 8766585147</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/shubham-ovhal-841305220/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://twitter.com/ShubhOvhal"><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100090260066323"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+                <a href="Images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Shubham Ovhal , Made By <i class="fa-solid fa-heart"></i>Shubham Ovhal</p>
+    </div>
+</div>
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+    
+
+</script>
+
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemeu.style.right= "0";
+    }
+    function closemenu(){
+        sidemeu.style.right= "-200px";
+    }
+
+</script>
+<form name="submit-to-google-sheet">
+    <input name="email" type="email" placeholder="Email" required>
+    <button type="submit">Send</button>
+  </form>
+  
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyv7vAT2-vWtL7tRcab368tGKGTIodarEgdo5jlTwobaEfnxOe88LEfG-TYKFo71UzBTA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully...!"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+
+</body>
+</html>
